@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SecurityProcessTasks.Repository
+namespace SecurityProcessTasks.Services.Repository
 {
    public interface ISecurityRepository
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
-namespace SecurityProcessTasks.Repository
+namespace SecurityProcessTasks.Services.Repository
 {
     public class SecurityRepository : ISecurityRepository   
     {

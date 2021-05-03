@@ -15,7 +15,8 @@ using Microsoft.Extensions.DependencyInjection;
 using RestSharp;
 using SecurityProcessTasks.DbContexts;
 using SecurityProcessTasks.Entities;
-using SecurityProcessTasks.Repository;
+
+using SecurityProcessTasks.Services.Repository;
 //dotnet lambda deploy-function SecurityProcessTasks
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]

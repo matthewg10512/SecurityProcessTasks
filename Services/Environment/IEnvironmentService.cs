@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SecurityProcessTasks
+namespace SecurityProcessTasks.Services.Environment
 {
     public interface IEnvironmentService
     {

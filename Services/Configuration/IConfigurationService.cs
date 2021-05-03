@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SecurityProcessTasks
+namespace SecurityProcessTasks.Services.Configuration
 {
     public interface IConfigurationService
     {

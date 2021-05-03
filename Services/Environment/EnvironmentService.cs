@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
 using static SecurityProcessTasks.Constants;
 
-namespace SecurityProcessTasks
+namespace SecurityProcessTasks.Services.Environment
 {
     public class EnvironmentService : IEnvironmentService
     {
         public EnvironmentService()
         {
-            EnvironmentName = Environment.GetEnvironmentVariable(EnvironmentVariables.AspnetCoreEnvironment)
+            EnvironmentName = System.Environment.GetEnvironmentVariable(EnvironmentVariables.AspnetCoreEnvironment)
                 ?? Environments.Production;
         }
 

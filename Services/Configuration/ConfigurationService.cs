@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-
-namespace SecurityProcessTasks
+using SecurityProcessTasks.Services.Environment;
+namespace SecurityProcessTasks.Services.Configuration
 {
     class ConfigurationService : IConfigurationService
     {

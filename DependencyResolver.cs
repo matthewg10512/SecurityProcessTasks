@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using SecurityProcessTasks.Repository;
 using System.Threading.Tasks;
 using Amazon.KeyManagementService;
 using Amazon;
 using Amazon.KeyManagementService.Model;
 using System.IO;
-
+using SecurityProcessTasks.Services.Environment;
+using SecurityProcessTasks.Services.Configuration;
 namespace SecurityProcessTasks
 {
     class DependencyResolver
@@ -29,17 +29,7 @@ namespace SecurityProcessTasks
             RegisterServices = registerServices;
             ConfigureServices(serviceCollection);
             ServiceProvider = serviceCollection.BuildServiceProvider();
-       
-            
-            //var  _securityRepository = ServiceProvider.GetService<ISecurityRepository>();
         
-            
-            
-             //var SecurityTask =  _securityRepository.GetTasks("SecurityUpdate");
-            //if (SecurityTask != null)
-            //{
-              //  testingMatt += SecurityTask.TaskUrl;
-            //}
         }
 
         private void ConfigureServices(IServiceCollection services)
